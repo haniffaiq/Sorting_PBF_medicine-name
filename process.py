@@ -113,7 +113,7 @@ def export_to_excel(df, file_name):
     print("DataFrame exported to Excel successfully!")
 
 # Jalankan proses data
-process_data('Database PBF KWB.xlsx', 'Lapstok KWB.xls', 'DataObatTidakDijual KWB.xlsx', "KWB_1.xlsx", "KWB_2.xlsx")
-# process_data('Database PBF KWM.xlsx', 'Lapstok KWM.xls', 'DataObatTidakDijual KWM.xlsx', "KWM_1.xlsx", "KWM_2.xlsx")
+process_data('Database PBF KWM.xlsx', 'Lapstok KWM.xls', 'DataObatTidakDijual KWM.xlsx', "KWM_1.xlsx", "KWM_2.xlsx")
+process_data('Database PBF GEDA.xlsx', 'Lapstok GEDA.xls', 'DataObatTidakDijual GEDA.xlsx', "GEDA_1.xlsx", "GEDA_2.xlsx")
 
 
