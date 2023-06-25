@@ -84,7 +84,8 @@ def process_data(supplier_file, lapstok_file, obat_tidak_dijual_file,  hasil_fil
 
     print(df_grouped)
     # Export DataFrame ke file Excel
-    export_to_excel(df_tempat_order, hasil_file)
+
+    # export_to_excel(df_tempat_order, hasil_file)
     export_to_excel(df_grouped, hasil2_file)
 
     # Cetak DataFrame obat tidak dijual
@@ -112,8 +113,32 @@ def export_to_excel(df, file_name):
     wb.save(file_name)
     print("DataFrame exported to Excel successfully!")
 
+
+
+
+
+
+pathDatabase_KWM = './Database PBF/Database PBF KWM.xlsx'
+pathDataObatTidakDijual_KWM = './Data Obat Tidak Dijual/DataObatTidakDijual KWM.xlsx'
+pathLapStok_KWM = './LapStok/Lapstok KWM.xls'
+
+pathDatabase_KWB = './Database PBF/Database PBF KWB.xlsx'
+pathDataObatTidakDijual_KWB = './Data Obat Tidak Dijual/DataObatTidakDijual KWB.xlsx'
+pathLapStok_KWB = './LapStok/Lapstok KWB.xls'
+
+
 # Jalankan proses data
-process_data('Database PBF KWM.xlsx', 'Lapstok KWM.xls', 'DataObatTidakDijual KWM.xlsx', "KWM_1.xlsx", "KWM_2.xlsx")
-process_data('Database PBF GEDA.xlsx', 'Lapstok GEDA.xls', 'DataObatTidakDijual GEDA.xlsx', "GEDA_1.xlsx", "GEDA_2.xlsx")
+
+
+# ====CODE DIATAS TULISAN INI JANGAN DIUBAH !!!!====
+
+
+# === PROSES KWM ===
+process_data(pathDatabase_KWM, pathLapStok_KWM, pathDataObatTidakDijual_KWM, "./Result/HASIL_KWM_1.xlsx", "./Result/HASIL_KWM_2.xlsx")
+
+# === PROSES KWB ===
+process_data(pathDatabase_KWB, pathLapStok_KWB, pathDataObatTidakDijual_KWB, "./Result/HASIL_KWB_1.xlsx", "./Result/HASIL_KWB_2.xlsx")
+
+
 
 
