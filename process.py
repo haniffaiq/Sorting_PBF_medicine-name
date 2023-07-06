@@ -228,17 +228,3 @@ cek_file(folderLaptStok, fileMUT)
 cek_file(folderLaptStok, fileMUS)
 cek_file(folderLaptStok, fileKWU)
 
-
-
-# # Jalankan proses data
-# # ====CODE DIATAS TULISAN INI JANGAN DIUBAH !!!!====
-
-
-# # === PROSES KWM ===
-# process_data(pathDatabase_KWM, pathLapStok_KWM, pathDataObatTidakDijual_KWM, "./Result/HASIL_KWM_1.xlsx", "./Result/Order-KWM-{}.xlsx".format(tanggal_hari_ini))
-
-# # === PROSES KWB ===
-# process_data(pathDatabase_KWB, pathLapStok_KWB, pathDataObatTidakDijual_KWB, "./Result/HASIL_KWB_1.xlsx", "./Result/Order-KWB-{}.xlsx".format(tanggal_hari_ini))
-
-# # === PROSES GEDA ===
-# process_data(pathDatabase_GEDA, pathLapStok_GEDA, pathDataObatTidakDijual_GEDA, "./Result/HASIL_GEDA_1.xlsx", "./Result/Order-GEDA-{}.xlsx".format(tanggal_hari_ini))
